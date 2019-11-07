@@ -12,13 +12,6 @@ a {
 .main-content__section:nth-of-type(2) {
   background-color: #f5f5f5; }
 
-.main-content__section:nth-of-type(3) {
-  background-color: #56ccf2; }
-  @media (min-width: 1440px) {
-    .main-content__section:nth-of-type(3) {
-      background: linear-gradient(115deg, #56ccf2 57%, transparent 57%, transparent 87%, #56ccf2 87%), url(../images/features/features-bg.jpg);
-      background-size: auto, cover; } }
-
 .section {
   padding: 0 calc(50% - 145px);
   position: relative; }
@@ -538,10 +531,6 @@ a {
     position: absolute;
     left: -21px;
     bottom: calc(50% - $vectorSize / 2); }
-  .heading--features {
-    color: #fff; }
-    .heading--features::before {
-      background-image: url(../images/features/heading-vector-white.svg); }
 
 @media (min-width: 768px) {
   .heading {
@@ -599,6 +588,24 @@ a {
   .we-do__do-card {
     margin: 0; } }
 
+@media (min-width: 1440px) {
+  .we-do {
+    padding-top: 124px;
+    height: 580px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .we-do__heading {
+      width: 100%;
+      top: calc(-18px - 124px);
+      margin: 0; }
+    .we-do__card-container {
+      margin: 0; }
+    .we-do__do-card {
+      margin-right: 128px; }
+      .we-do__do-card:last-of-type {
+        margin: 0; } }
+
 .heading-2 {
   font-size: 36px;
   line-height: 36px;
@@ -645,14 +652,15 @@ a {
 
 @media (min-width: 1440px) {
   .do-card {
-    width: 25%; }
+    width: 264px; }
     .do-card__img {
       width: 160px;
       height: 160px; }
     .do-card__heading {
-      margin-top: 53.33333px; }
+      margin-top: 64px; }
     .do-card__text {
-      margin-top: 26.66667px; } }
+      margin-top: 32px;
+      font-size: 19.6px; } }
 
 .process {
   padding: 6em 0;
@@ -809,90 +817,5 @@ a {
     font-size: 40px; }
   .pro-card__text {
     font-size: 12.6px; } }
-
-.features {
-  padding: 6em 0;
-  display: block;
-  margin: 0 auto;
-  text-align: center; }
-  .features__heading-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .features__subheading {
-    margin-top: 0.5em; }
-  .features__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 4em; }
-  .features__img {
-    width: 52px;
-    height: 52px;
-    background-image: url(../images/features/features-item-icon-1.svg);
-    background-size: cover; }
-    .features__img--2 {
-      background-image: url(../images/features/features-item-icon-3.svg); }
-    .features__img--3 {
-      background-image: url(../images/features/features-item-icon-2.svg); }
-  .features__text {
-    width: 210px;
-    line-height: 1.5;
-    color: #fff;
-    text-align: start; }
-
-@media (min-width: 768px) {
-  .features {
-    width: 280px;
-    text-align: start; }
-    .features__heading-container {
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start; }
-    .features__img {
-      width: 52px;
-      height: 52px; }
-    .features__text {
-      width: 210px; } }
-
-@media (min-width: 1440px) {
-  .features {
-    padding-top: 198px;
-    height: 778px;
-    width: 362px;
-    text-align: start;
-    margin: 0; }
-    .features__heading-container {
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start; }
-    .features__subheading {
-      margin-top: 19px; }
-    .features__content {
-      margin-top: 64px; }
-      .features__content:first-of-type {
-        margin-top: 69px; }
-    .features__img {
-      width: 64px;
-      height: 64px; }
-    .features__text {
-      width: 263px; } }
 
 /*# sourceMappingURL=main.css.map */
