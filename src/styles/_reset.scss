@@ -1,0 +1,21 @@
+html {
+  font-family: Muli, sans-serif;
+  font-size: $mainFont;
+
+  @media (min-width: 1440px) {
+    & {
+      font-size: $mainFontBig;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $textColor1;
+}
+
+.main-content {
+  &__section:nth-of-type(2) {
+    background-color: $bgColor1;
+  }
+}
