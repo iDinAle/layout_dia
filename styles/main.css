@@ -210,6 +210,45 @@ a {
     .nav__title {
       font-size: 32px; } }
 
+.reus-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 226px;
+  height: 56px;
+  border-radius: 28px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: bold;
+  background-color: #2f80ed;
+  z-index: 1;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s; }
+  .reus-button--size2 {
+    background-color: #fff;
+    height: 46px;
+    border-radius: 23px; }
+  .reus-button__link {
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s; }
+    .reus-button__link--font2 {
+      color: #253757;
+      font-weight: bold;
+      letter-spacing: 1px; }
+  .reus-button:hover {
+    background-color: #fcc304; }
+    .reus-button:hover .button__link {
+      color: #fff; }
+
+@media (min-width: 1440px) {
+  .reus-button {
+    font-size: 16px;
+    line-height: 1.5; }
+    .reus-button--size2 {
+      height: 56px;
+      border-radius: 28px; } }
+
 .dia {
   max-width: 290px;
   color: #fff;
@@ -222,26 +261,8 @@ a {
     font-weight: 200;
     margin-top: 0.5em;
     line-height: 1.5; }
-  .dia__link {
-    color: #253757;
-    font-weight: bold;
-    letter-spacing: 1px;
-    -webkit-transition: color 0.5s;
-    transition: color 0.5s; }
-  .dia__button {
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: #fff;
-    padding: 12px 43.2px;
-    border-radius: calc((24px + 15px) / 2);
-    margin-top: 1em;
-    -webkit-transition: background-color 0.5s;
-    transition: background-color 0.5s; }
-    .dia__button:hover {
-      background-color: #fcc304; }
-      .dia__button:hover .dia__link {
-        color: #fff; }
+  .dia__reus-button {
+    margin-top: 1em; }
 
 @media (min-width: 768px) {
   .dia {
@@ -252,7 +273,7 @@ a {
         align-self: flex-start; }
     .dia__slogan {
       margin-top: 0.3em; }
-    .dia__button {
+    .dia__reus-button {
       margin-top: 0.6em; } }
 
 @media (min-width: 1440px) {
@@ -265,13 +286,8 @@ a {
     .dia__slogan {
       font-size: 24px;
       margin-top: 22px; }
-    .dia__button {
-      width: 226px;
-      height: 56px;
-      border-radius: 28px;
-      margin-top: 42px;
-      font-size: 16px;
-      line-height: 1.5; } }
+    .dia__reus-button {
+      margin-top: 42px; } }
 
 .slider {
   display: -webkit-box;
@@ -1276,6 +1292,7 @@ a {
       margin-top: 64px; } }
 
 .apply {
+  height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1297,29 +1314,8 @@ a {
     font-weight: 600;
     line-height: 1.5;
     color: #334563; }
-  .apply__link {
-    -webkit-transition: color 0.5s;
-    transition: color 0.5s; }
-  .apply__button {
-    margin-top: 55px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    width: 226px;
-    height: 56px;
-    border-radius: 28px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    color: #fff;
-    font-weight: bold;
-    background-color: #2f80ed;
-    z-index: 1;
-    -webkit-transition: background-color 0.5s;
-    transition: background-color 0.5s; }
-    .apply__button:hover {
-      background-color: #fcc304; }
-      .apply__button:hover .apply__link {
-        color: #fff; }
+  .apply__reus-button {
+    margin-top: 55px; }
 
 @media (min-width: 768px) {
   .apply__text {
